@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1877f2;
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .row input {
+            width: 50%;
+        }
+        .gender {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .gender label {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #42b72a;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #36a420;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sign Up</h1>
+    <p style="text-align:center;">It's quick and easy.</p>
+
+    <form>
+        <div class="row">
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Surname" required>
+        </div>
+
+        <input type="email" placeholder="Mobile number or email" required>
+        <input type="password" placeholder="New password" required>
+
+        <label>Date of birth</label>
+        <div class="row">
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <select>
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+            </select>
+            <select>
+                <option>Year</option>
+                <option>2000</option>
+                <option>2001</option>
+            </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Custom</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>
