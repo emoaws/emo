@@ -1,7 +1,7 @@
 
 FROM httpd
 
-RUN apt-get update && apt-get install -y apache2 iputils-ping vim curl -y
+RUN apt-get update && apt-get install -y apache2 iputils-ping -y
 
 COPY index.html /usr/local/apache2/htdocs/
 
